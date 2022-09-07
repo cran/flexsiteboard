@@ -1,0 +1,62 @@
+---
+title: "Short introduction"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Short introduction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Introduction
+
+This package is intended as a drop-in replacement for `flexdashbaord`. It will
+split the board in sub-pages, one for each menu entry 
+(e.g. `# Item 1 {data-navmenu="Menu 1"}`). It
+should work out of the box by replacing the output format from
+
+```yaml
+output: flexdashboard::flex_dashboard
+```
+
+to
+
+```yaml
+output: flexsiteboard::flex_site_board
+```
+
+Please ensure, that any `JavaScript` needed in more than one menu entry related
+sub-page must be included before the first sub-menu-headline, i.e., 
+lines like `# Headline {data-navmenu=Main1}`, is given.
+
+Please also note, that this package is quite new and does things depending
+very much on the output of `flexdashbaord`, so there may be errors.
+
+# Additional features
+
+Because this package needs `Pandoc` internally, it also features functions
+similar to `pander::Pandoc.convert` or `rmarkdown::pandoc_convert`, but
+it converts also fragments (`pander` sets the `-s` argument for `pandoc` always
+creating full documents). `flexsiteboard`'s `Pandoc` functions handle all 
+temporary file creation/deletion automatically getting their input as a file or
+a character-vector function-argument and providing the conversion result 
+as character-vector return values. `flexsitebaord`'s functions do so in a 
+two-step process using `Pandoc`'s internal `json` format as a general format.
+
+```{r}
+flexsiteboard::pandoc_convert(text = c("# Test", "# Test2\nTest3"), 
+                              from = "markdown",
+                              to = "html")
+```
+
+```{r}
+flexsiteboard::pandoc_convert(text = "This is a <i>test</i>.", 
+                              from = "html",
+                              to = "markdown")
+```

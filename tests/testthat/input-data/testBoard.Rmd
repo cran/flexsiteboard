@@ -1,0 +1,45 @@
+---
+title: "testboard"
+output: 
+  flexsiteboard::flex_site_board:
+    self_contained: false
+    orientation: columns
+    vertical_layout: fill
+  flexdashboard::flex_dashboard:
+    self_contained: true
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+# Column 1 {data-navmenu="General information"}
+
+### Chart A
+
+```{r}
+
+```
+
+# Column 2 {data-navmenu="General information"}
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
+# Test {data-navmenu="General information II"}
+
+```{r echo=FALSE}
+plot(x = cars$speed, y = cars$dist)
+```
+
