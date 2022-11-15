@@ -13,5 +13,6 @@ pandoc_read <- function(file, text = NULL, from = pandoc_input_formats()) {
   } else {
     args <- sprintf("-f %s -t json", shQuote(from))
   }
-  system2(pandoc(), args, input = text, stdout=TRUE, stderr=TRUE)
+  pandoc <- system2(pandoc(), args, input = text, stdout=TRUE, stderr=TRUE)
+  paste0(pandoc, collapse = "")
 }

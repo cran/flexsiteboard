@@ -2,13 +2,14 @@ Package: flexsiteboard
 Type: Package
 Title: Breaks Single Page Applications from 'flexdashboard' in Multiple
         Files
-Version: 0.0.6
+Version: 0.0.7
 Authors@R: 
     c(person(given = "University Medicine Greifswald",
              role = "cph"),
       person(given = "Stephan",
              family = "Struckmann",
              role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-8565-7962"),
              email = "stephan.struckmann@uni-greifswald.de"))
 Description: A drop-in replacement for 'flexdashboard' 'Rmd' documents, which
   implements an after-knit-hook to split the generated single page application
@@ -17,6 +18,8 @@ Description: A drop-in replacement for 'flexdashboard' 'Rmd' documents, which
   before the first headline featuring navigation menu attributes. This package 
   is experimental and maybe replaced by a solution inside 'flexdashboard'.
 License: BSD_2_clause + file LICENSE
+URL: https://gitlab.com/libreumg/flexsiteboard/
+BugReports: https://gitlab.com/libreumg/flexsiteboard/-/issues
 Encoding: UTF-8
 Imports: flexdashboard, htmltools, htmlwidgets, jsonlite, knitr,
         rmarkdown, stats, yaml
@@ -27,9 +30,9 @@ Suggests: withr, testthat (>= 3.0.0), spelling
 Config/testthat/edition: 3
 Language: en-US
 NeedsCompilation: no
-Packaged: 2022-09-07 08:55:27 UTC; struckmanns
+Packaged: 2022-11-14 15:02:10 UTC; struckmanns
 Author: University Medicine Greifswald [cph],
-  Stephan Struckmann [aut, cre]
+  Stephan Struckmann [aut, cre] (<https://orcid.org/0000-0002-8565-7962>)
 Maintainer: Stephan Struckmann <stephan.struckmann@uni-greifswald.de>
 Repository: CRAN
-Date/Publication: 2022-09-07 18:40:06 UTC
+Date/Publication: 2022-11-15 23:00:02 UTC

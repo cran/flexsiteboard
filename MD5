@@ -1,13 +1,13 @@
-20cdbe38fd5b32723d05e6540bc0dad4 *DESCRIPTION
+8ffcb514543794c2280ff9b544fb4fd6 *DESCRIPTION
 b2b71a2de9a330352f659e04d10543f0 *LICENSE
 bbc273ca77d7940f1f6d5f0c155b2fd1 *NAMESPACE
-9edd6423fb937a2db30da64ca8d81ee3 *NEWS.md
+76bcc365a6dec4a0a2a9466d10e46fa1 *NEWS.md
 e36e27f8054f97ab0632ce3563be25c7 *R/000_glob.R
 d0bcca7cbbf36e43165c93796a85f987 *R/flex_site_board.R
 a5c0050d161d9fd1dc14121a0c5433b9 *R/pandoc.R
 96f5ef504319f47ab4f360510dc53a54 *R/pandoc_convert.R
-8a1e7c14c666dd7402bb5e54a587f8c8 *R/pandoc_read.R
-4d87a7c25a40e78039d0773417113e9d *R/pandoc_write.R
+60cb7d4dcbb9f3ad8e430c14911200c4 *R/pandoc_read.R
+10dd3e01f483b0b53ec6b172deebef54 *R/pandoc_write.R
 dbe5494a5a9d169cb818323e55312150 *R/post_knit.R
 303b5d5b809285c09d966fae0d3ab1de *build/vignette.rds
 d76abe2ea0c47797ff20d9fc5caa8711 *inst/WORDLIST

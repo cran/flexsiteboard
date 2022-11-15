@@ -1,3 +1,8 @@
+# flexsiteboard 0.0.7
+
+- Fixed a bug with larger reports on Windows: `pandoc_convert` did not handle
+  the line endings correctly.
+
 # flexsiteboard 0.0.6
 
 - Updates to implement CRAN policy.
